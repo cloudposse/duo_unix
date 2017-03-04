@@ -169,7 +169,7 @@ pam_sm_authenticate(pam_handle_t *pamh, int pam_flags,
 	}
         
     /* Check user */
-    if (pam_get_user(pamh, &user, NULL) != PAM_SUCCESS {
+    if (pam_get_user(pamh, &user, NULL) != PAM_SUCCESS) {
             return (PAM_USER_UNKNOWN);
     }
     /* XXX - Service-specific behavior */
